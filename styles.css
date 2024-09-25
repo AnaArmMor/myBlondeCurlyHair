@@ -1,0 +1,109 @@
+body {
+    background-color: rgb(239, 232, 232);
+}
+
+#why {
+    text-align: center;
+}
+
+#about {
+    text-align: center;
+}
+
+.layout {
+    
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    Grid-template-rows: repeat(2, 0.3fr);
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0px auto;
+    
+}
+
+.layout .caja {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    background: gray;
+    margin-bottom: 5px;
+}
+
+.layout .red {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: rgb(188, 111, 111);
+}
+
+.layout .blue {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background: rgb(110, 110, 223);
+}
+
+.layout .green {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background: rgb(126, 183, 126);
+    margin-right: 10px;
+}
+
+
+
+.layout .orange {
+    grid-column: 1/3;
+    background: rgb(244, 192, 97);
+}
+
+.layout .gray {
+    grid-column: 1/3;
+    background: rgb(194, 185, 185);
+}
+
+.layout .purple {
+    grid-column:1/3;
+    background: rgb(201, 77, 201);
+}
+.layout p{
+    text-align: justify;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 13px;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    padding-top: 5px;
+}
+@media(max-width:656px){
+    #why {
+        text-align: left;
+        font-size: 20px;
+    }
+    
+    #about {
+        text-align: left;
+        font-size: 10px;
+    }
+    
+}
+@media(max-width:425px){
+    #why {
+        text-align: left;
+        font-size: 17px;
+    }
+    
+    #about {
+        text-align: left;
+        font-size: 8px;
+        margin-bottom: 20px
+    }
+    .layout{
+        padding-left: 15px;
+    }
+   
+}
